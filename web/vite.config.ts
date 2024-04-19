@@ -8,6 +8,10 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: '192.168.63.126', // 设置本机的 IP 地址
+    port: 5173 // 设置端口号，如果你想改变的话
+  },
   plugins: [
     vue(),
     UnoCSS({ }),
